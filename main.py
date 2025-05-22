@@ -50,12 +50,6 @@ def main():
         for sid, (ans, grade) in assignment.submissions.items():
             student = session.get(Student, sid)
             print(f"- {student.name}: Оценка — {grade}, Ответ — {ans}")
-        #for sid, (ans, grade) in assignment.submissions.items():
-        #    student = next((s for s in python_course.students if s.id == sid), None)
-        #    if student:
-        #        print(f"- {student.name}: Оценка — {grade}, Ответ — {ans}")
-        #    else:
-        #        print(f"- <Неизвестный студент {sid}>: Оценка — {grade}, Ответ — {ans}")
 
 
 if __name__ == "__main__":
